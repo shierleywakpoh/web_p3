@@ -2,17 +2,16 @@ import { FiFastForward } from "react-icons/fi";
 import Button from "../ui/button";
 import Image from "next/image";
 
-
 const HeroSection = () => {
   return (
     <section id="hero-section" className="container mx-auto h-screen flex">
-      <div className="relative self-center">
+      <div className="relative self-center top-11">
         <Image
           src="/images/img-basketball.png"
-          width={382}
-          height={383}
+          width={330}
+          height={330}
           alt="image sporton"
-          className="grayscale absolute left-0 -top-20"
+          className="grayscale absolute left-20 -top-10"
         />
         <div className="relative ml-40 w-full">
           <div className="text-primary italic">Friday Sale, 50%</div>
@@ -37,26 +36,23 @@ const HeroSection = () => {
                 height={29}
               />
             </Button>
-           
           </div>
         </div>
         <Image
           src="/images/img-hero.png"
-          width={550}
-          height={800}
+          width={520}
+          height={780}
           alt="image sporton hero"
-          className="absolute -right-25 top-1/2 -translate-y-1/2"
+          className="absolute -right-20 top-1/2 -translate-y-1/2"
         />
-        
       </div>
       <Image
         src="/images/img-ornament-hero.svg"
-        width={380}
-        height={380}
+        width={400}
+        height={400}
         alt="image sporton"
         className="absolute -right-[200px] top-1/2 -translate-y-1/2 "
       />
-      
     </section>
   );
 };

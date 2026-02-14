@@ -86,7 +86,7 @@ const TransactionModal = ({isOpen,onClose,transaction,onStatusChange}:TTransacti
                             <h4 className="font-semibold text-sm mb-2">Items Purchased</h4>
                             <div className="space-y-3">
                                 {transaction.purchasedItems.map((item, index) => (
-                                    <div className="border border-gray-200 rounded-lg p-2 flex items-center gap-2">
+                                    <div className="border border-gray-200 rounded-lg p-2 flex items-center gap-2" key={index}>
                                         <div className="bg-gray-100 rounded aspect-square w-8 h-8">
                                             <Image
                                                 src={getImagaeUrl(item.productId.imageUrl)}

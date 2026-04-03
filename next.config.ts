@@ -1,15 +1,17 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  images:{
-    remotePatterns:[
+  images: {
+    remotePatterns: [
       {
-        protocol :"https",
-        hostname :"be-sporton.agunacourse.com",
-        pathname :"/uploads/**",
-      }
-    ]
-  }
+        protocol: "http",
+        hostname: "localhost",
+        port: "5001",
+        pathname: "/uploads/**",
+      },
+    ],
+    dangerouslyAllowLocalIP: true,
+  },
 };
 
 export default nextConfig;
